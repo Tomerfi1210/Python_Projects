@@ -1,0 +1,14 @@
+Algorithm
+
+Starting with an incomplete board:
+
+1.Find some empty space
+2.Attempt to place the digits 1-9 in that space
+3.Check if that digit is valid in the current spot based on the current board
+ a. If the digit is valid, recursively attempt to fill the board using steps 1-3.
+b. If it is not valid, reset the square you just filled and go back to the previous step.
+4.Once the board is full by the definition of this algorithm we have found a solution.
+
+In Solver folder we solve the sudoku using backtracking. if we run the program the sudoku will be solved.
+
+In GUI folder we use Pygame to give the user a chance to play. the gui part using the solver file to know if the user did right or wrong.
